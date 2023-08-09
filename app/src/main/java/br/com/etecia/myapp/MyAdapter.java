@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder{
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder {
     private Context mContexto;
 
     private List<Filmes> lstFilmes;
@@ -24,7 +24,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder{
         this.mContexto = mContexto;
         this.lstFilmes = lstFilmes;
     }
-
 
 
     @NonNull
@@ -41,6 +40,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder{
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
+        holder.idTituloFilmes.setText(lstFilmes.get(position).getTitulo());
+        holder.idImagemFilmes.setImageResource(lstFilmes.get(position).getImagem());
     }
 
     @Override
@@ -48,7 +49,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder{
         return 0;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
         TextView idTituloFilmes;
         ImageView idImagemFilmes;
         CardView idCardFilmes;
