@@ -27,6 +27,33 @@ public class MainActivity extends AppCompatActivity {
 
         listaFilmes = new ArrayList<>();
 
+        listaFilmes.add(
+                new Filmes("Apocalipse",
+                        "Filme legal",
+                        "Ação",
+                        R.drawable.apocalipe)
+        );listaFilmes.add(
+                new Filmes("Rei da Monhatanha",
+                        "O rei que tá na montanha",
+                        "Aventura",
+                        R.drawable.rei_montanha)
+        );listaFilmes.add(
+                new Filmes("Apocalips",
+                        "Filme legal",
+                        "Ação",
+                        R.drawable.apocalipe)
+        );listaFilmes.add(
+                new Filmes("Apocalips",
+                        "Filme legal",
+                        "Ação",
+                        R.drawable.apocalipe)
+        );listaFilmes.add(
+                new Filmes("Apocalips",
+                        "Filme legal",
+                        "Ação",
+                        R.drawable.apocalipe)
+        );
+
 
 
         MyAdapter adapter = new MyAdapter(getApplicationContext(),listaFilmes);
