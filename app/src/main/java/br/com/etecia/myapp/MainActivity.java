@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
                         "Aventura",
                         R.drawable.rei_montanha)
         );listaFilmes.add(
-                new Filmes("Apocalips",
-                        "Filme legal",
+                new Filmes("Desejos Ocultos",
+                        "Desejos que são ocultos",
                         "Ação",
                         R.drawable.apocalipe)
         );listaFilmes.add(
